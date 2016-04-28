@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Course Counts</title>
+    <title>Course List</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <link rel="stylesheet" href="/css/style.css">
     <script src="/js/main.js"></script>
 </head>
 <body>
-    {% for department in departments %}
-    <a href = "/{{department}}">{{department}}</a>
+    {% for course in course_list %}
+       {{course.year}} {{course.season}} {{course.section_title}}
     {% endfor %}
 </body>
 </html>
