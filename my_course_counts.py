@@ -11,7 +11,6 @@ class Course:
             self.season = season
             self.department = department
             self.crn = crn
-            self.waistlisted = waitlisted
             self.section_title = section_title
             self.units = units
             self.instructors = instructors
