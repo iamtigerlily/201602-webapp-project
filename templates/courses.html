@@ -8,8 +8,9 @@
     <script src="/js/main.js"></script>
 </head>
 <body>
+<h1>These classes have open seats!</h1>
     {% for course in course_list %}
-       {{course.year}} {{course.season}} {{course.section_title}}
+       <p class="center"><strong>{{course.year}} {{course.season}}</strong> {{course.section_title}}</p>
     {% endfor %}
 </body>
 </html>

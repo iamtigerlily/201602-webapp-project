@@ -8,8 +8,9 @@
     <script src="/js/main.js"></script>
 </head>
 <body>
-    {% for department in departments %}
-    <a href = "/{{department}}">{{department}}</a>
+<h1>Choose a department to see the courses with open seats!</h1>
+    {% for department in departments[1:] %}
+    <h3><p class="center"><a href = "/{{department}}">{{department}}</a></p></h3>
     {% endfor %}
 </body>
 </html>

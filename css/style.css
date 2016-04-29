@@ -1,0 +1,26 @@
+h1 { color:#331100;
+    text-decoration:underline;
+    text-align:center;
+    margin:auto;
+    }
+
+h3 { color:#331100;
+    text-decoration:underline;
+    text-align:center;
+    margin:auto;
+    }
+
+P.center {
+text-align: center;
+}
+
+body {
+    background-image: url("http://imgur.com/M0V8pzs.png");
+
+}
+
+<style>
+a:link    {color:#FF7733; background-color:transparent; text-decoration:none}
+a:visited {color:#331100; background-color:transparent; text-decoration:none}
+a:hover   {color:#E8B65F; background-color:transparent; text-decoration:underline}
+</style>
