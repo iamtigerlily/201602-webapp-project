@@ -2,7 +2,7 @@
 <head>
 <title>courses</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link href="style.css" rel="stylesheet" type="text/css">
+<link href="/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 <!-- Save for Web Slices (courses.psd) -->
@@ -20,8 +20,10 @@
 	<tr>
 		<td colspan="2"><p>&nbsp;</p>
   <p>&nbsp;</p>
+           <center> <h1>These classes have open seats!</h1></center>
              {% for course in course_list %}
-    <center><h1><strong>{{course.year}} {{course.season}}</strong></h1>{{course.section_title}}</center>
+    <center>{{course.year}} {{course.season}}
+        <strong><h3>{{course.section_title}}</h3></strong></center>
     {% endfor %}
   <p>&nbsp;</p>
   <p>&nbsp;</p>
