@@ -6,11 +6,12 @@ from flask import Flask, render_template, send_from_directory
 app = Flask(__name__)
 
 class Course:
-	def __init__(self, year, season, department, crn, section_title, units, instructors, meetings, core, total_seats, enrolled_seats):
+	def __init__(self, year, season, department, crn, waitlisted, section_title, units, instructors, meetings, core, total_seats, enrolled_seats):
             self.year = year
             self.season = season
             self.department = department
             self.crn = crn
+            self.waitlisted = waitlisted
             self.section_title = section_title
             self.units = units
             self.instructors = instructors
@@ -39,7 +40,7 @@ def get_library():
     with open('counts.tsv') as fd:
         for line in fd.read().splitlines():
             fields = line.split('\t')
-            course = Course(fields[0], fields[1], fields[2], fields[3], fields[4], fields[5], fields[6], fields[7], fields[8], fields[9], fields[10])
+            course = Course(fields[0], fields[1], fields[2], fields[3], fields[4], fields[5], fields[6], fields[7], fields[8], fields[9], fields[10], fields[11])
             library.courses.append(course)
         return library
 
