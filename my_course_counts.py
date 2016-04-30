@@ -54,16 +54,18 @@ def get_department_list():
             department_list.append(fields[2])
     return department_list
 
-
 @app.route('/')
+def homepage():
+    return render_template('home2.html')
+@app.route('/departments')
 def view_departments():
     departments = get_department_list()
-    return render_template('base.html',departments = departments)
+    return render_template('departments2.html', departments = departments)
 @app.route('/<department>')
 def view_courses(department):
     library = get_library()
     course_list = library.search_by_department(department)
-    return render_template('courses.html',  course_list = course_list)
+    return render_template('courses2.html',  course_list = course_list)
 
 # The functions below lets you access files in the css, js, and images folders.
 # You should not change them unless you know what you are doing.
