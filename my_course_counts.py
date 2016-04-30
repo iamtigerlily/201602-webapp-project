@@ -19,7 +19,6 @@ class Course:
             self.core = core
             self.total_seats = total_seats
             self.enrolled_seats = enrolled_seats
-
 class Library:
         def __init__(self):
             self.courses = []
