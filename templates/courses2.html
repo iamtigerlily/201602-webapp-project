@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>courses</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="style2.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- Save for Web Slices (courses.psd) -->
+<table id="Table_01" width="1000" height="1000" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<img src="/images/courses_01.jpg" width="249" height="251" alt=""></td>
+		<td>
+			<img src="/images/courses_02.jpg" width="751" height="251" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<img src="/images/courses_03.jpg" width="1000" height="96" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2"><p>&nbsp;</p>
+  <p>&nbsp;</p>
+             {% for course in course_list %}
+    <p class="center"><strong>{{course.year}} {{course.season}}</strong> {{course.section_title}}</p>
+    {% endfor %}
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p></td>
+	</tr>
+    <a href="#" align="bottom" onClick="history.go(-1);return true;">Go Back!</a>
+</table>
+
+<!-- End Save for Web Slices -->
+</body>
+</html>
