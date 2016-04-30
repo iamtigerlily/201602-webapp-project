@@ -11,7 +11,7 @@ class Course:
             self.season = season
             self.department = department
             self.crn = crn
-            self.waitlisted = waitlisted
+            self.waistlisted = waitlisted
             self.section_title = section_title
             self.units = units
             self.instructors = instructors
@@ -65,7 +65,7 @@ def view_departments():
 def view_courses(department):
     library = get_library()
     course_list = library.search_by_department(department)
-    return render_template('courses2.html',  course_list = course_list)
+    return render_template('departments.html',  course_list = course_list)
 
 # The functions below lets you access files in the css, js, and images folders.
 # You should not change them unless you know what you are doing.
